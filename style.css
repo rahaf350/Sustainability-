@@ -4,7 +4,6 @@ html{
 
 body{
     margin: 0px;
-    "proxima-nova","Helvetica Neue";
 }
 
 .content{
@@ -15,7 +14,7 @@ header{
     background: url(images/d.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     flex-wrap: wrap;
 }
 
@@ -63,7 +62,7 @@ header{
 }
 
 .headerFace{
-    flex: 50%;
+    flex: 100%;
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -90,7 +89,7 @@ header{
     text-align: center;
 }
 
-.learnMore{
+.headerFace .learnMore{
     color: white;
     text-decoration: none;
     background-color: gray;
@@ -99,17 +98,13 @@ header{
     margin-bottom: 30px
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-}
 
 .article-1{
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: aqua;
+    background-color: white;
     box-sizing: border-box;
     padding: 50;
      
@@ -128,38 +123,122 @@ section{
     margin: 0px
 }
 
-.article-2{
-    display: flex;
-    flex-direction: row;
+
+
+.row{
+   display: flex;
+    padding: 30px 120px;
 }
 
-.article-2 .img1{
-    background-color:blue;
+.left-1{
     display: flex;
-    flex: 50%;
+    align-items:flex-start;
+    justify-content:center;
+    flex:55%;
+    background-color:white;
+   
+}
+
+.right-1{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 83vmin;
+    align-items:center;
+    flex:45%;
+    background-color:white;
 }
 
-.article-2 .img1 img{
-    max-width: 620px;
-    min-height: 500px;
+.fakeImage{
+    width:90%;
+    height:65vmin;
+    background-color: aqua;
 }
 
-.article-2 .text1{
-    background-color:brown;
-    flex: 50%;
-    height: 83vmin;
+.right-1 h4{
+    font-size: 2.5vmax;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.right-1 p{
+    font-size: 1.4vmax;
+    box-sizing: border-box;
+    text-align: center;    
+}
+
+
+.right-1 .button1{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding:20px 40px 20px 40px;
+    border-radius: 5px;   
+}
+
+
+.row2{
+   display: flex;
+    padding: 30px 120px;
+}
+
+.left-2{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex:55%;
+    background-color:white;
+   
+}
+
+.right-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex:45%;
+    background-color:white;
+}
+
+.fakeImage2{
+    width:90%;
+    height:65vmin;
+    background-color: aqua;
+}
+
+.right-2 h4{
+    font-size: 2.5vmax;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.right-2 p{
+    font-size: 1.4vmax;
+    box-sizing: border-box;
+    text-align: center;    
+}
+
+
+.right-2 .button2{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding:20px 40px 20px 40px;
+    border-radius: 5px;   
 }
 
 
 
-@media only screen and (max-width: 768px) {
-    nav{
-        display: none;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
