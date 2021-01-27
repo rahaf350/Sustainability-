@@ -1,0 +1,412 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    "proxima-nova","Helvetica Neue";
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+}
+header{
+    background: url(images/d.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.webName{
+    flex: 50%;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+   
+}
+
+.Name{
+    font-size: 5vmin;
+    color: white;
+    margin-left: 30px;  
+}
+
+.nav{
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    height:10vmin;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+   
+}
+
+.nav div a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.nav div .takeAction{
+    margin-right: 30px;
+    margin-left:20px;
+    background-color:gray;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+.headerFace{
+    flex: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    align-self: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 67vmin;
+}
+
+.headerFace h3{
+    color: white;
+    font-size: 4vmin;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.headerFace h1{
+    color: white;
+    font-size: 12vmin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.learnMore{
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding:20px 40px 20px 40px;
+    border-radius: 5px; 
+    margin-bottom: 30px
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 50;
+     
+}
+
+.article-1 h4{
+    font-size: 6vmin;
+    box-sizing: border-box;
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+
+.article-1 p{
+    font-size: 3vmin;
+    box-sizing: border-box;
+    margin: 0px
+}
+
+.article-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-2 .img1{
+    background-color:blue;
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 83vmin;
+}
+
+.article-2 .img1 img{
+    max-width: 620px;
+    min-height: 500px;
+}
+
+.article-2 .text1{
+    background-color:brown;
+    flex: 50%;
+    height: 83vmin;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.header-img {
+  width: 100%;
+  height: 550px;
+  background: url(images/d.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.webName{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color:white;
+}
+
+li{
+    display: inline;
+}
+
+ul{
+    position: absolute;
+    top:10px;
+    right: 20px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px
+}
+
+.takeAction{
+    background-color: gray;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.headerCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.h3-header{
+    font-size: 25px;
+}
+
+.h1-header{
+    margin-top: 0px;
+    font-size: 80px;
+}
+
+.learnMore{
+    padding:25 30 25px 30;
+    background-color:gray;
+    color:white;
+    border-radius: 5px;
+}
+
+.headerCenter-layout{
+    position: absolute;
+    top: 160px;
+    text-align: center;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px
+}
+
+p{
+   text-align: center; 
+    font-size: 20px
+}
+
+ artical 1
+.col-1{
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 300px
+}
+
+.h4-col1{
+    margin-bottom: 20px;
+    
+   
+}
+.p-col1{
+    margin-top: 0px
+    
+}
+
+ artical 2 
+.col-2{
+    display:flex;
+    flex-direction:row;
+    background:white;
+    width: 100%;
+    height: 600px
+}
+
+.col2-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 60%;
+    background-color: aqua;
+    height: 600px;
+}
+
+img{
+    max-width:100%;
+    height:450px;
+}
+
+
+.col2-2{
+    display: flex;
+    flex: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 600px;  
+}
+    
+.col2-content{
+    
+}
+
+
+
+
+
+
+/*
+
+.imgcol2{
+    max-width: 600px;
+    height: 500px;
+    float:left;
+    position: absolute;
+    top: 50px;
+    left: 155px
+}
+
+
+.col2-content{
+    float:right;
+    position: absolute;
+    top: 120px;
+    right: 130px;
+    
+}
+.learnMore1{
+    color: black;
+    padding:25 30 25px 30;
+    background-color:gray;
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    right: 160px
+}
+
+/*
+artical 3
+.col-3{
+    position: relative;
+    background: white;
+    width: 100%;
+    height: 600px
+}
+
+.col3-content{
+    float:left;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    
+}
+.learnMore2{
+    color: black;
+    padding:25 30 25px 30;
+    background-color:gray;
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    left: 200px
+}
+
+.imgcol3{
+    height: 500px;
+    width: 600px;
+    float:right;
+    position: absolute;
+    top: 50px;
+    right: 155px
+}
+
+
+
+ 
+
+
+ artical 4
+.col-4{
+    background: lightgray;
+    width: 100%;
+    height: 300px
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    ul{
+        display: none;
+    }
+}
+/*
