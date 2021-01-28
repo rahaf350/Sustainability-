@@ -5,6 +5,7 @@ html{
 body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .content{
@@ -12,7 +13,7 @@ body{
     flex-direction: column;
 }
 header{
-    background: url(images/d.jpg) no-repeat center center;
+    background: url(images/a1.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction:row;
@@ -53,15 +54,25 @@ header{
     color: white;
     text-decoration: none;
     margin: 15px;
-    font-size: 20px;
+    font-size: 19px; 
+}
+
+.nav div a:hover{
+    text-decoration: underline;
 }
 
 .nav div .takeAction{
     margin-right: 30px;
-    margin-left:20px;
-    background-color:gray;
-    padding: 10px 20px 10px 20px;
+    margin-left:10px;
+    background-color:#a8a6a1;
+    padding: 10px 15px 10px 15px;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+.takeAction:hover{
+    opacity: 0.8;
+    text-decoration: none;
 }
 
 .headerFace{
@@ -78,7 +89,7 @@ header{
 
 .headerFace h3{
     color: white;
-    font-size: 4vmin;
+    font-size: 3.5vmin;
     margin-bottom: 0;
     margin-top: 30px;
     text-align: center;
@@ -86,20 +97,24 @@ header{
 
 .headerFace h1{
     color: white;
-    font-size: 12vmin;
+    font-size: 10vmin;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    font-weight: bold;
 }
 
 .headerFace .learnMore{
     color: white;
     text-decoration: none;
-    background-color: gray;
+    background-color:#a8a6a1;
     padding:20px 40px 20px 40px;
     border-radius: 5px; 
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.learnMore:hover{
+    opacity: 0.8;
 }
 
 
@@ -115,14 +130,14 @@ header{
 }
 
 .article-1 h4{
-    font-size: 6vmin;
+    font-size: 5vmin;
     box-sizing: border-box;
     margin-top:0px;
     margin-bottom: 20px;
 }
 
 .article-1 p{
-    font-size: 3vmin;
+    font-size: 2.6vmin;
     box-sizing: border-box;
     margin: 0px
 }
@@ -159,13 +174,13 @@ header{
 }
 
 .right-1 h4{
-    font-size: 2.5vmax;
+    font-size: 2vmax;
     box-sizing: border-box;
     margin-bottom: 0px;
 }
 
 .right-1 p{
-    font-size: 1.4vmax;
+    font-size: 1.2vmax;
     box-sizing: border-box;
     text-align: center;    
 }
@@ -174,11 +189,15 @@ header{
 .right-1 .button1{
     color: white;
     text-decoration: none;
-    background-color: gray;
+    background-color:#a8a6a1;
     padding:20px 40px 20px 40px;
     border-radius: 5px;   
+    font-weight: bold;
 }
 
+.button1:hover{
+    opacity: 0.8;
+}
 
 .row2{
    display: flex;
@@ -210,13 +229,13 @@ header{
 }
 
 .right-2 h4{
-    font-size: 2.5vmax;
+    font-size: 2vmax;
     box-sizing: border-box;
     margin-bottom: 0px;
 }
 
 .right-2 p{
-    font-size: 1.4vmax;
+    font-size: 1.2vmax;
     box-sizing: border-box;
     text-align: center;    
 }
@@ -225,20 +244,25 @@ header{
 .right-2 .button2{
     color: white;
     text-decoration: none;
-    background-color: gray;
+    background-color:#a8a6a1;
     padding:20px 40px 20px 40px;
-    border-radius: 5px;   
+    border-radius: 5px;  
+    font-weight: bold;
+}
+
+.button2:hover{
+    opacity: 0.8;
 }
 
 .row3{
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+    background-color:e6e6e6;
     
 }
 
 .row3 h4{
-    font-size: 2.5vmax;
+    font-size: 2vmax;
     box-sizing: border-box;
     margin-bottom: 0px;
     text-align: center;
@@ -246,7 +270,7 @@ header{
 }
 
 .row3 p{
-    font-size: 1.4vmax;
+    font-size: 1.2vmax;
     box-sizing: border-box;
     text-align: center;
     margin-top: 0px;
@@ -269,7 +293,6 @@ input{
     font-size: 2.1vmin;
     border-radius: 5px;
     border: 0px;
-   
 }
 
 .button3{
@@ -278,20 +301,25 @@ input{
     margin: 10px;
     border-radius: 5px;
     color: white;
-    background-color: gray;
+    background-color:#a8a6a1;
     border: 0px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.button3:hover{
+    opacity: 0.8;
 }
 
 footer{
-    background-color:black;
+    background-color:#38383b;
     padding: 10px;
 }
 
 footer p{
     color:white;
     text-align: center;
-    font-size:2.6vmin;
+    font-size:2.3vmin;
 }
 
 footer a{
@@ -299,280 +327,8 @@ footer a{
     color: white;
 }
 
-footer p span{
+footer p a{
     text-decoration: underline;
-    color:gray;
+    color:lightgray;
+    cursor: pointer;
 }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.header-img {
-  width: 100%;
-  height: 550px;
-  background: url(images/d.jpg) no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
-
-.webName{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    color:white;
-}
-
-li{
-    display: inline;
-}
-
-ul{
-    position: absolute;
-    top:10px;
-    right: 20px;
-}
-
-a{
-    color:white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px
-}
-
-.takeAction{
-    background-color: gray;
-    margin-left: 15px;
-    border-radius: 5px;
-    padding: 12px;
-}
-
-.headerCenter{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.h3-header{
-    font-size: 25px;
-}
-
-.h1-header{
-    margin-top: 0px;
-    font-size: 80px;
-}
-
-.learnMore{
-    padding:25 30 25px 30;
-    background-color:gray;
-    color:white;
-    border-radius: 5px;
-}
-
-.headerCenter-layout{
-    position: absolute;
-    top: 160px;
-    text-align: center;
-    color: white;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-}
-
-h4{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 35px
-}
-
-p{
-   text-align: center; 
-    font-size: 20px
-}
-
- artical 1
-.col-1{
-    position: relative;
-    background: white;
-    width: 100%;
-    height: 300px
-}
-
-.h4-col1{
-    margin-bottom: 20px;
-    
-   
-}
-.p-col1{
-    margin-top: 0px
-    
-}
-
- artical 2 
-.col-2{
-    display:flex;
-    flex-direction:row;
-    background:white;
-    width: 100%;
-    height: 600px
-}
-
-.col2-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 60%;
-    background-color: aqua;
-    height: 600px;
-}
-
-img{
-    max-width:100%;
-    height:450px;
-}
-
-
-.col2-2{
-    display: flex;
-    flex: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: blueviolet;
-    height: 600px;  
-}
-    
-.col2-content{
-    
-}
-
-
-
-
-
-
-/*
-
-.imgcol2{
-    max-width: 600px;
-    height: 500px;
-    float:left;
-    position: absolute;
-    top: 50px;
-    left: 155px
-}
-
-
-.col2-content{
-    float:right;
-    position: absolute;
-    top: 120px;
-    right: 130px;
-    
-}
-.learnMore1{
-    color: black;
-    padding:25 30 25px 30;
-    background-color:gray;
-    color:white;
-    border-radius: 5px;
-    position: absolute;
-    top: 230px;
-    right: 160px
-}
-
-/*
-artical 3
-.col-3{
-    position: relative;
-    background: white;
-    width: 100%;
-    height: 600px
-}
-
-.col3-content{
-    float:left;
-    position: absolute;
-    top: 120px;
-    left: 130px;
-    
-}
-.learnMore2{
-    color: black;
-    padding:25 30 25px 30;
-    background-color:gray;
-    color:white;
-    border-radius: 5px;
-    position: absolute;
-    top: 230px;
-    left: 200px
-}
-
-.imgcol3{
-    height: 500px;
-    width: 600px;
-    float:right;
-    position: absolute;
-    top: 50px;
-    right: 155px
-}
-
-
-
- 
-
-
- artical 4
-.col-4{
-    background: lightgray;
-    width: 100%;
-    height: 300px
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-    ul{
-        display: none;
-    }
-}
-/*
