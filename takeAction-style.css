@@ -202,3 +202,20 @@ footer p a{
     color:lightgray;
     cursor: pointer;
 }
+
+@media screen and (max-width: 955px){
+    .nav{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+    }
+    
+    .left{
+        padding: 0  0 100 0;
+    }
+    .right{
+        padding:0;
+    }
+    
+}

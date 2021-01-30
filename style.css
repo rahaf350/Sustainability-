@@ -404,7 +404,7 @@ footer p a{
         visibility: visible;
     }
     
-    .navResponsive:hover .nav{
+    .navResponsive:hover{
         visibility: visible;
     }
     
