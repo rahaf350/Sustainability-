@@ -12,29 +12,44 @@
     
 <!----------- header -----------> 
 
-    
-
-
-  
-   
-    
-    
 <header>
    <div class="webName">
       <div class="Name"><a href="sustainability.html">RHF foundation</a></div>
    </div>  
+    
+    
+<div class="responsiveNav">
+   <span class="openNav" onclick="openNav()">&#9776;</span>     
+   <div id="Sidenav" class="sidenav">
+      <span class="closebtn" onclick="closeNav()">&times;</span>  
+      <div class="anav">
+          <a class="about" id="aboutID" onclick="openApout()">About</a>
+          <div class="drop_down2" id="drop_downID">
+          <a href="#">What We Do</a>
+          <a href="#">Project</a>
+          <a href="#">Partner</a>
+          <a href="#">Contact</a>
+          </div> 
+        <a href="#">News</a>
+        <a href="#">Read Me</a>
+        <a href="TakeAction.html">Take Action</a>
+      </div>
+  </div>
+</div>   
+    
+
    <div class="nav">  
       <div class="drop">
-          <a class="a-nav">About</a>
+          <a class="a-nav about2">About</a>
           <div class="drop-down">
-          <a href="WhatWeDo.html">What We Do</a>
-          <a href="project.html">Project</a>
-          <a href="partner.html">Partner</a>
-          <a href="contact.html">Contact</a>
+          <a href="#">What We Do</a>
+          <a href="#">Project</a>
+          <a href="#">Partner</a>
+          <a href="#">Contact</a>
           </div>
       </div>
-      <div><a class="a-nav" href="#news.html">News</a></div>
-      <div><a class="a-nav" href="ReadMe.html">Read Me</a></div>
+      <div><a class="a-nav" href="#">News</a></div>
+      <div><a class="a-nav" href="#">Read Me</a></div>
       <div><a  class="takeAction" href="TakeAction.html">Take Action</a></div>
    </div>
     
@@ -45,6 +60,7 @@
    </div>
 </header>
     
+    
 <article class="article-1" id="section1">
    <h4>We conserve land through outreach and restoration.</h4>
    <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration,
@@ -53,12 +69,12 @@
 
 <article class="row">
    <div class="left-1">
-      <img src="images/x.jpg"  class="fakeImage"> 
+      <img src="images/x.jpg"  class="Image"> 
    </div>  
    <div class="right-1">
       <h4>Our Organization</h4>
       <p>Find out about our mission, methods, and the results of our decades of advocacy.</p>
-      <a href="LearnMore.html" class="button1">Learn More</a>
+      <a href="#" class="button1">Learn More</a>
    </div>
 </article>
        
@@ -66,10 +82,10 @@
    <div class="right-2">
       <h4>Take Action</h4>
       <p>Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
-      <a href="FindOutHow.html" class="button2" style="height">Find Out How</a>
+      <a href="#" class="button2" style="height">Find Out How</a>
    </div>  
    <div class="left-2">
-      <img src="images/z.jpg"  class="fakeImage2"> 
+      <img src="images/z.jpg"  class="Image2"> 
    </div>  
 </article>
 
@@ -88,7 +104,7 @@
     </address>
     <p>Made With <a href="#RahafFORbusiness">Rahaf</a></p>
 </footer>
-
-    <script src="Sustainability1.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/Sustainability1.js"></script>
 </body>
 </html>

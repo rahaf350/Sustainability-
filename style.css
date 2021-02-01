@@ -8,12 +8,6 @@ body{
     
 }
 
-.content{
-    display:flex;
-    flex-direction: column;
-}
-
-
 a:visited {
   color: white;
   background-color: transparent;
@@ -43,6 +37,10 @@ header{
     font-weight: bold;
     text-decoration: none;
 
+}
+
+.responsiveNav{
+    display: none;
 }
 
 .nav{
@@ -81,6 +79,10 @@ header{
     text-decoration: none;
     margin: 15px;
     font-size: 19px;
+}
+
+.about2{
+    cursor: pointer;
 }
 
 .takeAction:hover{
@@ -171,7 +173,6 @@ header{
     background-color: white;
     box-sizing: border-box;
     padding: 50;
-     
 }
 
 .article-1 h4{
@@ -212,7 +213,7 @@ header{
     background-color:white;
 }
 
-.fakeImage{
+.Image{
     width:90%;
     height:65vmin;
     background-color: aqua;
@@ -267,7 +268,7 @@ header{
     background-color:white;
 }
 
-.fakeImage2{
+.Image2{
     width:90%;
     height:65vmin;
 }
@@ -377,45 +378,105 @@ footer p a{
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px){    
-    /*-----NAVIGATION RESPONSIVE-----*/
-       .webName{
-        padding:10 0 10 10;
-        flex: 100%;
-        order: 0;
+@media screen and (max-width: 1024px){  
+    
+    .webName{
+        padding: 0px;
+        margin-top:18px;
     }
     .Name a{
-        margin-left: 10PX;
+        margin-left: 20px;
     }
     
+    /*-----NAVIGATION RESPONSIVE-----*/
     .nav{
-        padding: 0px;
-        flex:100%;
-        justify-content: center;
-        background-color: black;
-        order: 1;
-    }
-
-    .nav div .takeAction{
-    margin-left:10px;
-    padding: 10px 15px 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 19px;
-}
-    
-    .headerFace{
-        
+        display: none;
     }
     
+    .responsiveNav{
+        display: block;
+    }
+    
+    .openNav{
+        color: white;
+        cursor: pointer;
+        font-size:5vmin;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    
+    .openNav:hover{
+        opacity: 0.8;
+    }
+    
+    .sidenav{
+        width:0px;
+        height: 100%;
+        position: fixed;
+        background-color:#111;
+        right: 0px;
+        top:0px; 
+        transition: 0.5s;
+        overflow-x: hidden;
+        text-overflow:ellipsis;
+    }
+    
+    .anav{
+        position: absolute;
+        top:90px;
+    }
+    
+    .sidenav a{
+        padding: 10px;
+        color:#818181;
+        text-decoration: none;
+        display: block;
+        font-size: 3vmin;
+        margin-left:20px;
+    }
+    
+    .sidenav a:hover {
+       color: #f1f1f1;
+    } 
+    
+    .closebtn {
+        color:#818181;
+        margin-right:23px;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        font-size:6vmin;
+    }
+    
+     .closebtn:hover {
+       color: #f1f1f1;
+    } 
+    
+    .about{
+        cursor: pointer;
+    }
+    
+    .about::after{
+        content:" \00BB";
+    }
+    
+    .drop_down2{
+            max-height: 28vmin;
+        overflow:hidden;
+        display: none;
+        margin-left:10;
+    }
+    
+    .drop_down2 a{
+        font-size:2vmin;
+    }
     
 
-    
-   
 
+    
     /*-----ROWS-----*/
     .article-1{
         padding: 90 0 90 0;
