@@ -12,6 +12,14 @@ function closeNav() {
     document.getElementById("Sidenav").style.width = "0";
 }
 
+ var signUp = document.getElementsByClassName("button3");
+ var form = document.getElementsByClassName("row3");
+signUp.onclick = function() {
+    "use strict";
+    form.style.display = none;
+}
+
+
 
 //open Responsive Apout Navigation
 $(document).ready(function(){
@@ -21,7 +29,6 @@ $(document).ready(function(){
     });
   });
 });
-
 
  // Add smooth scrolling to Learn more button
 $(document).ready(function(){
