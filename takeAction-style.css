@@ -8,7 +8,7 @@ body{
     
 }
 
-span:visited {
+a:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
@@ -30,7 +30,7 @@ header{
     padding: 20px 0px 0px 20px ;
 }
 
-.Name span{
+.Name a{
     font-size:calc(3px + 2vw);
     color: white;
     margin-left: 30px;  
