@@ -206,7 +206,7 @@ footer p a{
     cursor: pointer;
 }
 
-@media screen and (max-width: 955px){
+@media screen and (max-width: 975px){
   
     .webName{
         padding: 0px;
@@ -304,12 +304,14 @@ footer p a{
         font-size:calc(10px + 0.5vw);
     }
     
-       footer p{
-        font-size: calc(10px + 0.5vw);
-    }
+    
     /*-----ROWS-----*/
     article{
-        flex-direction: column;
+        flex-direction: column; 
+    }
+    
+    article h4{
+        font-size: calc(17px + 0.5vw);
     }
     
     .left{
@@ -318,5 +320,20 @@ footer p a{
     .right{
         padding:0;
     }
+    .paragraph{
+        padding: 0px;
+        width: 300px;   
+    }
+    
+    .btn{
+        font-size: calc(10px + 0.5vw);
+        padding: 2.5vmin;
+    
+    }
+         footer p{
+        font-size: calc(10px + 0.5vw);
+    }
     
 }
+    
+   
