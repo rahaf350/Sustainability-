@@ -8,7 +8,7 @@ body{
     
 }
 
-a:visited {
+span:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
@@ -30,9 +30,9 @@ header{
     padding: 20px 0px 0px 20px ;
 }
 
-.Name a{
-    font-size: 5vmin;
-    color:blue;
+.Name span{
+    font-size:calc(3px + 2vw);
+    color: white;
     margin-left: 30px;  
     font-weight: bold;
     text-decoration: none;
@@ -61,7 +61,7 @@ header{
     color: white;
     text-decoration: none;
     margin: 15px;
-    font-size: 19px; 
+    font-size: calc(11px + 0.5vw);
 }
 
 .a-nav:hover{
@@ -78,7 +78,7 @@ header{
     color: white;
     text-decoration: none;
     margin: 15px;
-    font-size: 19px;
+    font-size: calc(11px + 0.5vw);
 }
 
 .about2{
@@ -107,7 +107,7 @@ header{
 .drop-down a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size:calc(6px + 0.5vw);
     margin-top: 10px;
 }
 
@@ -133,7 +133,7 @@ header{
 
 .headerFace h1{
     color: white;
-    font-size: 10vmin;
+    font-size: calc(5.5vh + 2vw);
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -146,12 +146,12 @@ article{
 }
 
 article h4{
-    font-size: 4vmin;
+    font-size: calc(30px + 0.5vw);
     margin: 0px;
 }
 
 article p{
-    font-size: 2.8vmin;
+    font-size: calc(13px + 0.5vw);
     text-align:center;
     max-width: 60vmin;
     padding: 20 40 20 40;
@@ -192,7 +192,7 @@ footer{
 footer p{
     color:white;
     text-align: center;
-    font-size:2.3vmin;
+    font-size:calc(8px + 0.5vw);
 }
 
 footer a{
@@ -216,6 +216,8 @@ footer p a{
         margin-left: 20px;
     }
     
+    
+    
     /*-----NAVIGATION RESPONSIVE-----*/
     .nav{
        display: none;
@@ -228,7 +230,7 @@ footer p a{
     .openNav{
         color: white;
         cursor: pointer;
-        font-size:5vmin;
+        font-size:calc(23px + 0.5vw);
         position: absolute;
         right: 20px;
         top: 20px;
@@ -261,7 +263,7 @@ footer p a{
         color:#818181;
         text-decoration: none;
         display: block;
-        font-size: 3vmin;
+        font-size: calc(18px + 0.5vw);
         margin-left:20px;
     }
     
@@ -276,7 +278,7 @@ footer p a{
         position: absolute;
         right: 0px;
         top: 20px;
-        font-size:6vmin;
+        font-size:calc(35px + 0.5vw);
     }
     
      .closebtn:hover {
@@ -292,16 +294,19 @@ footer p a{
     }
     
     .drop_down2{
-        max-height: 28vmin;
+        max-height: 34vmin;
         overflow:hidden;
         display: none;
         margin-left:10;
     }
     
     .drop_down2 a{
-        font-size:2vmin;
+        font-size:calc(10px + 0.5vw);
     }
     
+       footer p{
+        font-size: calc(10px + 0.5vw);
+    }
     /*-----ROWS-----*/
     article{
         flex-direction: column;
