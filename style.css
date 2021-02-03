@@ -492,8 +492,9 @@ footer p a{
     }
     
     .article-1 p{
-        font-size:calc(18px + 0.5vw);
-        padding:10px;
+        font-size:calc(16px + 0.5vw);
+        width:90vmin;
+        
     }
     
     .row{
