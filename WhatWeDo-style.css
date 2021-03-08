@@ -6,13 +6,10 @@
 html{
     box-sizing: border-box;
 }
-
 body{
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;  
 }
-
 a:visited {
   color: white;
   background-color: transparent;
@@ -56,8 +53,7 @@ header{
     align-items: center;
     box-sizing: border-box;
     padding: 20px 20px 0 0 ;
-    position: relative;
-   
+    position: relative;  
 }
 .nav div .a-nav{
     color: white;
@@ -84,7 +80,7 @@ header{
     cursor: pointer;
 }
 .takeAction:hover{
-    opacity: 0.8;  
+    opacity: 0.8; 
 }
 .drop{
     display: flex;
@@ -134,48 +130,27 @@ header{
 /*---- Article ----*/
 article{
     display: flex;
-    flex-direction:row;
-    padding: 100 100 100 100;
+    flex-direction: column;
+    padding:0% 15% 4% 15%;
 }
-article h4{
-    font-size: calc(30px + 0.5vw);
+article h1{
+    margin: 0px;
+    padding: 8% 0 8% 0;
+}
+article h1 p{
+    font-size:0.7em;
+    font-weight: 100    
+}
+.what-we-achieved{
+    display: flex;
+    flex-direction: row; 
+}
+.what-we-achieved div{
+    padding:0% 3% 0% 3%;
     margin: 0px;
 }
-article p{
-    font-size: calc(13px + 0.5vw);
-    text-align:center;
-    max-width: 60vmin;
-    padding: 20 40 20 40;
-}
-article a{
-    color: white;
-    text-decoration: none;
-    background-color:#a8a6a1;
-    padding:20px 40px 20px 40px;
-    border-radius: 5px;   
-    font-weight: bold;
-}
-.left{
-    display: flex;
-    flex-direction: column;
-    flex: 50%;
-    background-color:white;
-    align-items: center;
-    padding:20 0 20 20;
-}
-.right{
-    display: flex;
-    flex-direction: column;
-    flex: 50%;
-    background-color:white; 
-    align-items: center;
-    padding:20 20 20 0;
-}
-.btn{
-    color: aliceblue;
-    background-color:#a8a6a1;
-    padding:15px;
-    font-size: calc(8px + 0.5vw);
+.what-we-achieved div ul li{
+    padding:3% 0% 3% 0%;
 }
 
 /*---- footer ----*/
@@ -207,14 +182,14 @@ footer p a{
     .Name a{
         margin-left: 20px;
     }
-    
+       
 /*-----NAVIGATION RESPONSIVE-----*/
     .nav{
        display: none;
-    }
+    } 
     .responsiveNav{
         display: block;
-    }
+    } 
     .openNav{
         color: white;
         cursor: pointer;
@@ -223,10 +198,10 @@ footer p a{
         right: 20px;
         top: 20px;
         cursor: pointer;
-    }
+    } 
     .openNav:hover{
         opacity: 0.8;
-    } 
+    }
     .sidenav{
         width:0px;
         height: 100%;
@@ -241,7 +216,7 @@ footer p a{
     .anav{
         position: absolute;
         top:90px;
-    }  
+    } 
     .sidenav a{
         padding: 10px;
         color:#818181;
@@ -249,10 +224,10 @@ footer p a{
         display: block;
         font-size: calc(18px + 0.5vw);
         margin-left:20px;
-    }   
+    } 
     .sidenav a:hover {
        color: #f1f1f1;
-    }    
+    }  
     .closebtn {
         color:#818181;
         margin-right:23px;
@@ -261,10 +236,10 @@ footer p a{
         right: 0px;
         top: 20px;
         font-size:calc(35px + 0.5vw);
-    }    
+    }  
      .closebtn:hover {
        color: #f1f1f1;
-    }    
+    }   
     .about{
         cursor: pointer;
     }   
@@ -276,39 +251,31 @@ footer p a{
         overflow:hidden;
         display: none;
         margin-left:10;
-    }   
+    }  
     .drop_down2 a{
         font-size:calc(10px + 0.5vw);
-    }
-      
+    }   
+    
 /*-----Article RESPONSIVE-----*/
     article{
-        flex-direction: column; 
-    }  
-    article h4{
-        font-size: calc(17px + 0.5vw);
-    }  
-    .left{
-        padding: 0  0 100 0;
+        padding:0% 10% 0% 10%; 
     }
-    .right{
-        padding:0;
+    .what-we-achieved{
+        display: flex;
+        flex-direction:column; 
+    }  
+    .what-we-achieved div{
+        padding:0% 0% 0% 0%;
+        
     }
-    .paragraph{
-        padding: 0px;
-        width: 300px;   
-    }   
-    .btn{
-        font-size: calc(10px + 0.5vw);
-        padding: 2.5vmin;
+   .what-we-achieved div ul li{
+        padding:1.5% 0% 1.5% 0%;
+    }
     
-    }
- 
 /*-----footer RESPONSIVE-----*/
     footer p{
         font-size: calc(10px + 0.5vw);
-    }
-    
+    } 
 }
     
    
