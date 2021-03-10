@@ -128,6 +128,29 @@ header{
 }
 
 /*---- Article ----*/
+article{
+    display: flex;
+    flex-direction: column;
+    padding:2% 20% 2% 20%;
+}
+article h1:nth-child(1){
+    font-size: calc(3vh + 0.5vw);
+    padding:0% 0% 10% 0%;
+}
+article h1:nth-child(2){
+    font-size: calc(3vh + 0.5vw);
+}
+article h1:nth-child(3){
+    font-size: calc(3vh + 0.5vw);
+}
+article h1:nth-child(4){
+    font-size: calc(3vh + 0.5vw);
+}
+article p{
+    padding:0% 0% 10% 0%;
+    font-size: calc(1.5vh + 0.5vw);
+    margin: 0px;
+}
 
 
 
@@ -235,7 +258,14 @@ footer p a{
     }   
     
 /*-----Article RESPONSIVE-----*/
-  
+    article{
+        display: flex;
+        flex-direction: column;
+        padding:2% 10% 2% 10%;
+    }
+    article p{
+        font-size:calc(13px + 0.5vw);
+    }
     
 /*-----footer RESPONSIVE-----*/
     footer p{
