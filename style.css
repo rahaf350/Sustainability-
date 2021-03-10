@@ -8,14 +8,15 @@ html{
 }
 body{
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif; 
 }
 a:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
+
+/*---- header ----*/
 header{
     background: url(images/a1.jpg) no-repeat center center;
     background-size: cover;
