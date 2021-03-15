@@ -476,19 +476,26 @@ footer p a{
     .right-2{
         order: 2;
     }  
+
     .row3 h4{
-        font-size:calc(24px + 0.5vw);   
+        font-size:calc(20px + 0.5vw);
+        margin:20 0px 0px 0px
     }  
     .row3 p{
-        font-size:calc(16px + 0.5vw); 
-        padding: 10px;
+        font-size:calc(14px + 0.5vw); 
+        padding: 0px 10px 0px 10px;
+        margin: 0px;
     }
     input{
-
         height: 9vmin;
+        margin: 0px;
     }
     .button3{
         height: 9vmin;
+        margin: 0px 5px;
+    }
+    form{
+        margin:20px;
     }
     footer p{
         font-size: calc(10px + 0.5vw);
