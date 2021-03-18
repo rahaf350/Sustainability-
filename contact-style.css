@@ -272,7 +272,7 @@ footer p a{
     }
     #map-info{
         flex-direction: column;
-        height:20em; 
+        height:30em; 
         padding: 0em 0em 4em 0em;
     }
     #map{
