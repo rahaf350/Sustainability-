@@ -2,8 +2,8 @@
 <html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Project</title>   
-   <link rel="stylesheet" href="project-style.css">
+   <title>Contact</title>   
+   <link rel="stylesheet" href="contact-style.css">
    <meta charset="utf-8">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -54,25 +54,34 @@
 
 <!-- header face --> 
 <div class="headerFace">     
-  <h1>Projects</h1>
+  <h1>Contact</h1>
 </div>
 </header>
 
 <!-- Article -->
 <article>
-  <h1>Here's just a small sampling of the natural treasures we've helped preserve over the years.</h1>
-  <img src="images/project1.JPG">
-    
-  <h1>Monument Valley, Utah</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <img src="images/project2.JPG">
-    
-  <h1>Denali National Park</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <img src="images/project3.JPG">
-    
-  <h1>Glacier National Park, Montana</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h1>Call or visit us today.</h1>
+  <div id="map-info">
+    <div id="map"></div>
+    <div style="font-size:calc(10px + 0.5vw);" id="#info">
+       Majdi aldumari Street<br>
+       KSA, Almadinah Almunawwarah<br>
+       (966) 555-5555<br><br>
+
+       Monday – Friday: 9AM – 6PM<br>
+       Saturday: 10AM – 6PM<br>
+       Sunday: Closed
+    </div>
+  </div>
+  <div style="font-size:calc(10px + 0.5vw);" id="Emails">
+    <h3>Email</h3>
+    <h4>General inquiries</h4>
+    <a>email@example.com</a>
+    <h4>Partnerships</h4>
+    <a>email@example.com</a>
+  </div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="https://maps.googleapis.com/maps/api/js?  key=AIzaSyCJpJV35UBQ9GLrkZaMVzc7n4SQVzeqCus&callback=initMap&libraries=&  v=weekly"async></script>
 </article>
 
 <!-- footer -->
@@ -82,7 +91,25 @@
   </address>
   <p>Made With <a href="#RahafFORbusiness">Rahaf</a></p>
 </footer>
-    
+
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+
+  const uluru = { lat: 24.468369, lng:39.613951 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+</script>   
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/Sustainability1.js"></script>
 </body>

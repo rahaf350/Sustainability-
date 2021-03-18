@@ -129,89 +129,38 @@ header{
 
 /*---- Article ----*/
 article{
-    display: flex;
-    flex-direction: column;
-     display: flex;
-    flex-direction: column;
-    padding:2% 20% 2% 20%;
+    padding:2% 10% 2% 10%;
 }
 h1{
-    font-size: calc(3vh + 0.5vw);
+    font-size: calc(3vh + 0.5vw); 
 }
 h3{
-    font-size: calc(2.1vh + 0.5vw); 
-    padding: 50px 0px 0px 0px;
-}
-.logo{
-    display: flex;
-    flex-direction: row;
-    
-}
-.logo h1{
-    font-size: calc(5vh + 0.5vw);
-    padding: 25px 10px 25px 10px;
-    margin: 0px 60px 0px 0px;
-    background-color: #edeff0;
-    border-radius: 50%;
-    color:dimgrey;
-    font-weight: 100;
-}
-p{
     margin: 0px;
 }
-
-/*form*/
-form{
-    padding:50px 0px 0px 0px;
+h4{
+    margin-bottom: 0px
 }
-.nameForm{
+#Emails a{
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#Emails a:hover{
+    opacity: 0.8;
+}
+#Emails{
+    padding:0 0 22px 0
+}
+
+#map-info{
     display: flex;
-    flex-direction: row;
-    padding: 0px;
+    flex-direction:row;
+    padding: 0em 0em 5em 0em;
 }
-form #fname, #lname{
-    width:100%;
-    height:50px;
-}
-.phone{
-    width: 5em;
-    height:50px;
-}
-form #email{
-    width: 100%;
-    height: 50px
-}
-form #message{
-    resize: none;
-    width: 100%;
-    height: 150px;
-    border-radius: 2px;
-    border:1px solid lightgray;
-    background-color: #fafafa;
-}
-#charLabel{
-    font-size:0.8em;
-}
-#numOfChar{
-    font-size:0.8em
-}
-
-form #submit{
-    background-color: #a8a6a1;
-    border: 0px;
-    color:white;
-    padding: 20px 30px;
-    border-radius: 5px;
-    font-size: calc(1.5vh + 0.5vw);
-}
-#submit:hover{
-    opacity: 0.8; 
-}
-input{
-    border-radius: 2px;
-    border:1px solid lightgray;
-    background-color: #fafafa;
-    margin-right:10px;
+#map {
+    height: 20em;
+    width: 50%;
+    margin:0% 2% 0% 0%;
 }
 
 /*---- footer ----*/
@@ -319,24 +268,17 @@ footer p a{
     
 /*-----Article RESPONSIVE-----*/
     article{
-        padding:2% 10% 2% 10%;
+        padding:2% 5% 2% 5%;
     }
-    .logo{
+    #map-info{
         flex-direction: column;
-        align-items: center;
+        height:20em; 
+        padding: 0em 0em 4em 0em;
     }
-    .logo h1{
-    margin: 10px 0px 10px 0px;
-}
-    h3{
-    font-size: calc(2.1vh + 0.5vw); 
-    padding: 10px 0px 0px 0px;
-}
-    form{
-        padding: 30px 0px 0px 0px
+    #map{
+        width: 100%;
     }
-  
-    
+        
 /*-----footer RESPONSIVE-----*/
     footer p{
         font-size: calc(10px + 0.5vw);
