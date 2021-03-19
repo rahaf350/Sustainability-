@@ -1,0 +1,326 @@
+@font-face{
+    font-family:'myfont';
+    src: url("my_font.ttf");
+    font-display:swap;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;  
+}
+a:visited {
+  color:black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*---- header ----*/
+header{
+    display: flex;
+    flex-direction: row;
+}
+.webName{
+    flex: 50%;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0px 20px 20px ;
+}
+.Name a{
+    font-size:calc(3px + 2vw);
+    color: black;
+    margin-left: 30px;  
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*---- header (NavBar) ----*/
+.responsiveNav{
+    display: none;
+}
+.nav{
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    height:10vmin;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0 ;
+    position: relative;  
+}
+.nav div .a-nav{
+    color:black;
+    text-decoration: none;
+    margin: 15px;
+    font-size: calc(11px + 0.5vw);
+}
+.a-nav:hover{
+    opacity: 0.8;
+}
+.nav div .takeAction{
+    margin-right: 30px;
+    margin-left:10px;
+    background-color:#a8a6a1;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: calc(11px + 0.5vw);
+}
+.about2{
+    cursor: pointer;
+}
+.takeAction:hover{
+    opacity: 0.8; 
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+}
+.drop-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    visibility: hidden; 
+}
+.drop-down a{
+    color:black;
+    text-decoration: none;
+    font-size:calc(6px + 0.5vw);
+    margin-top: 10px;
+}
+.drop-down a:hover{
+    opacity: 0.8;
+}
+.drop:hover .drop-down{
+    visibility: visible;
+}
+
+/*---- Article ----*/
+article{
+    padding:5% 10% 5% 10%;
+}
+.parts a{
+    color: gray;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size:calc(10px + 0.5vw);
+    cursor: pointer;
+}
+.parts a:hover{
+    opacity: 0.8;
+}
+.parts p{
+    font-weight: 900;
+    font-size:calc(10px + 0.5vw);
+    margin:0;
+    padding: 0 0 1em 0;
+}
+.parts h1{
+    font-size:calc(2em + 0.5vw);
+    margin:0;
+    padding: 0 0 0.5em 0;
+}
+/*----part1----*/
+#part1{
+    padding: 2em; 0 2em 0;
+    display: flex;
+    flex-direction: row;
+}
+.part1-img{
+    display: flex;
+    margin-right:4em;
+    flex: 50%;
+}
+.part1-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 50%;
+}
+
+/*----part2----*/
+#part2{
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 2em; 0 2em 0;
+}
+.part2-img{
+    display: flex;
+    flex: 50%;
+    margin-left:4em;
+}
+.part2-text{
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*----part3----*/
+#part3{
+    display: flex;
+    flex-direction: row;
+    padding: 2em; 0 2em 0;
+}
+.part3-img{
+    display: flex;
+    margin-right:4em;
+    flex: 50%;
+}
+.part3-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 50%;
+}
+
+
+/*---- footer ----*/
+footer{
+    background-color:#38383b;
+    padding: 10px;
+}
+footer p{
+    color:white;
+    text-align: center;
+    font-size:calc(8px + 0.5vw);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer p a{
+    text-decoration: underline;
+    color:lightgray;
+    cursor: pointer;
+}
+
+/*---- RESPONSIVE ----*/
+@media screen and (max-width: 975px){
+    .webName{
+        padding: 0px;
+        margin-top:18px;
+    }
+    .Name a{
+        margin-left: 20px;
+    }
+       
+/*-----NAVIGATION RESPONSIVE-----*/
+    .nav{
+       display: none;
+    } 
+    .responsiveNav{
+        display: block;
+    } 
+    .openNav{
+        color:black;
+        cursor: pointer;
+        font-size:calc(23px + 0.5vw);
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    } 
+    .openNav:hover{
+        opacity: 0.8;
+    }
+    .sidenav{
+        width:0px;
+        height: 100%;
+        position: fixed;
+        background-color:#111;
+        right: 0px;
+        top:0px; 
+        transition: 0.5s;
+        overflow-x: hidden;
+        text-overflow:ellipsis;
+    }  
+    .anav{
+        position: absolute;
+        top:90px;
+    } 
+    .sidenav a{
+        padding: 10px;
+        color:#818181;
+        text-decoration: none;
+        display: block;
+        font-size: calc(18px + 0.5vw);
+        margin-left:20px;
+    } 
+    .sidenav a:hover {
+       color: #f1f1f1;
+    }  
+    .closebtn {
+        color:#818181;
+        margin-right:23px;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        font-size:calc(35px + 0.5vw);
+    }  
+     .closebtn:hover {
+       color: #f1f1f1;
+    }   
+    .about{
+        cursor: pointer;
+    }   
+    .about::after{
+        content:" \00BB";
+    }   
+    .drop_down2{
+        max-height: 34vmin;
+        overflow:hidden;
+        display: none;
+        margin-left:10;
+    }  
+    .drop_down2 a{
+        font-size:calc(10px + 0.5vw);
+    }   
+    
+/*-----Article RESPONSIVE-----*/
+    article{
+        padding:5% 2% 5% 2%;
+    }
+    #part1{
+        flex-direction: column;
+    }
+    #part2{
+        flex-direction: column;
+    }
+    #part3{
+        flex-direction: column;
+    }
+    .part2-img{
+        margin: 0 0 1em 0;
+        width: 100%
+    }
+    .part1-img{
+        margin: 0 0 1em 0;
+        width: 100%
+    }
+    .part3-img{
+        margin: 0 0 1em 0;
+        width: 100%
+    }
+    .parts h1{
+        font-size:calc(20px + 0.5vw);
+    }
+    .parts p{
+        font-size:calc(14px + 0.5vw);
+    }
+    
+/*-----footer RESPONSIVE-----*/
+    footer p{
+        font-size: calc(10px + 0.5vw);
+    } 
+}
