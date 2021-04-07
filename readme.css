@@ -1,0 +1,334 @@
+@font-face{
+    font-family:'myfont';
+    src: url("my_font.ttf");
+    font-display:swap;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif; 
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*---- header ----*/
+header{
+    background: url(images/a1.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.webName{
+    flex: 50%;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 20px ;
+}
+.Name a{
+    font-size: calc(3px + 2vw);
+    color: white;
+    margin-left: 30px;  
+    font-weight: bold;
+    text-decoration: none;
+}
+.responsiveNav{
+    display: none;
+}
+.nav{
+    flex: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    height:10vmin;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 20px 0 0 ;
+    position: relative;
+   
+}
+.nav div .a-nav{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: calc(11px + 0.5vw);
+}
+.a-nav:hover{
+    opacity: 0.8;
+}
+.nav div .takeAction{
+    margin-right: 30px;
+    margin-left:10px;
+    background-color:#a8a6a1;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: calc(11px + 0.5vw);
+}
+.about2{
+    cursor: pointer;
+}
+.takeAction:hover{
+    opacity: 0.8; 
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+}
+.drop-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    visibility: hidden; 
+}
+.drop-down a{
+    color: white;
+    text-decoration: none;
+    font-size:  calc(6px + 0.5vw);
+    margin-top: 10px;
+}
+.drop-down a:hover{
+    opacity: 0.8;
+}
+.drop:hover .drop-down{
+    visibility: visible;
+}
+.headerFace{
+    flex: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    align-self: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 67vmin;
+}
+.headerFace h3{
+    color: white;
+    font-size: calc(16px + 0.5vw);
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-align: center;
+}
+.headerFace h1{
+    color: white;
+    font-size:calc(3.5vh + 2vw);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article{
+    padding:5% 10% 5% 10%;
+}
+article p{
+    font-size:calc(12px + 0.5vw); 
+}
+article h1{
+    font-size:calc(30px + 0.5vw);  
+}
+
+footer{
+    background-color:#38383b;
+    padding: 10px;
+}
+footer p{
+    color:white;
+    text-align: center;
+    font-size:calc(8px + 0.5vw);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer p a{
+    text-decoration: underline;
+    color:lightgray;
+    cursor: pointer;
+}
+
+/*----- RESPONSIVE -----*/
+@media screen and (max-width: 1024px){   
+    .webName{
+        padding: 0px;
+        margin-top:18px;
+    }
+    .Name a{
+        margin-left: 20px;
+    }
+    
+/*-----NAVIGATION RESPONSIVE-----*/
+    .nav{
+        display: none;
+    }
+    .responsiveNav{
+        display: block;
+    }
+    .openNav{
+        color: white;
+        cursor: pointer;
+        font-size:calc(23px + 0.5vw);
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .openNav:hover{
+        opacity: 0.8;
+    }
+    .sidenav{
+        width:0px;
+        height: 100%;
+        position: fixed;
+        background-color:#111;
+        right: 0px;
+        top:0px; 
+        transition: 0.5s;
+        overflow-x: hidden;
+        text-overflow:ellipsis;
+    }
+    .anav{
+        position: absolute;
+        top:90px;
+    }
+    .sidenav a{
+        padding: 10px;
+        color:#818181;
+        text-decoration: none;
+        display: block;
+        font-size: calc(18px + 0.5vw);
+        margin-left:20px;
+    }
+    .sidenav a:hover {
+       color: #f1f1f1;
+    } 
+    .closebtn {
+        color:#818181;
+        margin-right:23px;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        font-size:calc(35px + 0.5vw);
+    }
+     .closebtn:hover {
+       color: #f1f1f1;
+    } 
+    .about{
+        cursor: pointer;
+    }
+    .about::after{
+        content:" \00BB";
+    }
+    .drop_down2{
+        max-height: 34vmin;
+        overflow:hidden;
+        display: none;
+        margin-left:10;
+    }
+    .drop_down2 a{
+        font-size:calc(10px + 0.5vw);
+    }
+     
+/*-----ROWS-----*/
+    .article-1{
+        padding: 90 0 90 0;    
+    }
+    .article-1 h4{
+        font-size:calc(22px + 0.5vw);
+    } 
+    .article-1 p{
+        font-size:calc(16px + 0.5vw);
+        width:90vmin;     
+    } 
+    .row{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    } 
+    .left-1 img{
+        width:80vmin;
+    }
+    
+    .right-1 h4{
+        margin:15 0 15 0;
+        font-size:calc(25px + 0.5vw);
+    }
+    .right-1 p{
+        margin:0px;
+        font-size:calc(17px + 0.5vw);
+        padding: 0 50 0 50;
+    }
+    .right-1 .button1{
+       padding: 15 20 15 20;
+        margin: 20 0 20 0; 
+        font-size: calc(13px + 0.5vw);
+    } 
+    .row2{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .left-2 img{
+        width:80vmin;
+        padding: 50px 0 0 0;
+    }
+    .right-2 h4{
+        margin:15 0 15 0;
+        font-size:calc(25px + 0.5vw);
+    }  
+    .right-2 p{
+        margin:0px;
+        font-size:calc(17px + 0.5vw);
+        padding: 0 50 0 50;
+    }  
+    .right-2 .button2{
+       padding: 15 20 15 20;
+       margin: 20 0 70 0; 
+       font-size:calc(13px + 0.5vw);
+    } 
+    .left-2{
+        order: 1;
+        
+    }  
+    .right-2{
+        order: 2;
+    }  
+
+    .row3 h4{
+        font-size:calc(20px + 0.5vw);
+        margin:20 0px 0px 0px
+    }  
+    .row3 p{
+        font-size:calc(14px + 0.5vw); 
+        padding: 0px 10px 0px 10px;
+        margin: 0px;
+    }
+    input{
+        height: 9vmin;
+        margin: 0px;
+    }
+    .button3{
+        height: 9vmin;
+        margin: 0px 5px;
+    }
+    form{
+        margin:20px;
+    }
+    footer p{
+        font-size: calc(10px + 0.5vw);
+    }
+}
