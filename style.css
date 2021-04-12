@@ -304,7 +304,7 @@ input{
     border: 0px;
     cursor: pointer;
     font-weight: bold;
-    font-size:calc(10px + 0.5vw);
+    font-size:calc(7px + 0.5vw);
 }
 .button3:hover{
     opacity: 0.8;
@@ -330,6 +330,31 @@ footer p a{
 }
 
 /*----- RESPONSIVE -----*/
+
+@media screen and (max-width: 400px){
+    .Name a{
+        font-size: calc(5px + 2vw);
+        
+}
+    .headerFace h3{
+        font-size: calc(1.7vh + 0.5vw);
+        margin-top: 30px;
+}
+    .headerFace h1{
+        color: white;
+        font-size:calc(3.5vh + 2vw);
+        margin-top: 0px;
+        margin-bottom: 5px;
+
+}
+    .headerFace .learnMore{
+        padding:10px 20px 10px 20px;
+        border-radius: 5px; 
+        margin-bottom: 10px;
+        font-size: calc(1vh + 0.5vw); 
+}
+}
+
 @media screen and (max-width: 1024px){   
     .webName{
         padding: 0px;
@@ -403,7 +428,7 @@ footer p a{
         content:" \00BB";
     }
     .drop_down2{
-        max-height: 34vmin;
+        max-height: 40vmin;
         overflow:hidden;
         display: none;
         margin-left:10;
@@ -501,3 +526,5 @@ footer p a{
         font-size: calc(10px + 0.5vw);
     }
 }
+
+

@@ -205,6 +205,12 @@ footer p a{
 }
 
 /*---- RESPONSIVE ----*/
+@media screen and (max-width: 400px){
+    .Name a{
+        font-size: calc(5px + 2vw);
+}
+
+}
 @media screen and (max-width: 975px){
     .webName{
         padding: 0px;

@@ -161,6 +161,22 @@ footer p a{
 }
 
 /*----- RESPONSIVE -----*/
+@media screen and (max-width: 400px){
+    .Name a{
+        font-size: calc(5px + 2vw);
+        
+}
+    .headerFace h3{
+        font-size: calc(1.7vh + 0.5vw);
+        margin-top: 30px;
+}
+    .headerFace h1{
+        color: white;
+        font-size:calc(2.6vh + 2vw);
+        margin-top: 0px;
+        margin-bottom: 5px;
+}
+}
 @media screen and (max-width: 1024px){   
     .webName{
         padding: 0px;
